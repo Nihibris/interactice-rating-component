@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: hsl(216, 12%, 8%);
+  --bg-component: hsl(213, 19%, 18%);
+  --gradient:  
+;
+}
+
+body {
+  background: var(--bg);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 25%;
+  background: var(--bg-component);
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 16px;
+}
