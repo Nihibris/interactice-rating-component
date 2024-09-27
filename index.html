@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- Before rating-->
-    <div class="container hidden">
+    <div class="container">
       <img class="image-star" src="./images/icon-star.svg" alt="" />
       <h1 class="heading">How did we do?</h1>
       <p>
@@ -28,14 +28,14 @@
         <button class="btn" type="">2</button>
         <button class="btn" type="">3</button>
         <button class="btn" type="">4</button>
-        <button class="btn" type="">5</button>
+        <button class="btn selected" type="">5</button>
       </section>
       <button class="btn-submit" type="">submit</button>
     </div>
     <!-- After rating-->
-    <div class="container container__thank-you">
+    <div class="container container__thank-you hidden">
       <img src="./images/illustration-thank-you.svg" alt="" />
-      <div class="selected">You selected 4 out of 5</div>
+      <div class="out-of">You selected 4 out of 5</div>
       <section class="thank-you-text">
         <h1>Thank You!</h1>
         <p>
@@ -44,5 +44,6 @@
         </p>
       </section>
     </div>
+    <script src="./main.js"></script>
   </body>
 </html>
