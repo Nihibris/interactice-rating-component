@@ -39,6 +39,10 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.container__thank-you {
+  justify-items: center;
+  gap: 2em;
+}
 .btn {
   background: var(--bg);
   color: var(--grey);
@@ -65,6 +69,29 @@ body {
   font-size: 1rem;
   padding: 0.5em;
 }
+.thank-you-text {
+  display: grid;
+  text-align: center;
+  gap: 0.5em;
+
+  &.thank-you-text > h1 {
+    color: var(--fg-main);
+  }
+  &.thank-you-text > p {
+    color: var(--grey);
+  }
+}
+
+.selected {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  max-height: 5px;
+  padding: 0.85em;
+  border-radius: 2em;
+  background-color: var(--bg);
+  color: var(--active-state);
+}
 .heading {
   color: var(--fg-main);
 }
@@ -72,10 +99,17 @@ body {
   color: var(--grey);
 }
 
-.container > img {
+.image-star {
   background-color: var(--bg);
   border-radius: 50%;
   padding: 16px;
   width: 20px;
   height: 20px;
+}
+
+.hidden {
+  padding: 0;
+  margin: 0;
+  display: none;
+  visibility: hidden;
 }

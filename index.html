@@ -15,8 +15,9 @@
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
-    <div class="container">
-      <img src="./images/icon-star.svg" alt="" />
+    <!-- Before rating-->
+    <div class="container hidden">
+      <img class="image-star" src="./images/icon-star.svg" alt="" />
       <h1 class="heading">How did we do?</h1>
       <p>
         Please let us know how we did with your support request. All feedback is
@@ -30,6 +31,18 @@
         <button class="btn" type="">5</button>
       </section>
       <button class="btn-submit" type="">submit</button>
+    </div>
+    <!-- After rating-->
+    <div class="container container__thank-you">
+      <img src="./images/illustration-thank-you.svg" alt="" />
+      <div class="selected">You selected 4 out of 5</div>
+      <section class="thank-you-text">
+        <h1>Thank You!</h1>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don't hesitate to get in touch!
+        </p>
+      </section>
     </div>
   </body>
 </html>
