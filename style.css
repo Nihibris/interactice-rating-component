@@ -15,7 +15,11 @@
   --fg-main: hsl(0, 0%, 100%);
   --grey: hsl(217, 12%, 63%);
   --active-state: hsl(25, 97%, 53%);
-  --gradient-one: linear-gradient(hsl(213, 10%, 18%), var(--bg-component));
+  --gradient-one: radial-gradient(
+    circle at top,
+    var(--bg-component),
+    var(--bg)
+  );
 }
 
 body {
@@ -32,7 +36,6 @@ body {
   padding: 2em;
   background: var(--gradient-one);
   border-radius: 14px;
-  box-shadow: 16px;
 }
 
 .container__btn {
@@ -44,7 +47,7 @@ body {
   gap: 2em;
 }
 .btn {
-  background: var(--bg);
+  background-color: var(--bg-component);
   color: var(--grey);
   height: 3em;
   width: 3em;
@@ -107,7 +110,7 @@ body {
 }
 
 .image-star {
-  background-color: var(--bg);
+  background-color: var(--bg-component);
   border-radius: 50%;
   padding: 16px;
   width: 20px;
