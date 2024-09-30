@@ -25,15 +25,15 @@ function handleSubmit() {
       "afterbegin",
       `
 
-      <img src="./images/illustration-thank-you.svg" alt="" />
+      <img src="./images/illustration-thank-you.svg"/>
 <div class="out-of">You selected ${document.querySelector(".selected").getHTML()} out of 5</div>
-      <section class="thank-you-text">
+      <div class="thank-you-text">
         <h1>Thank You!</h1>
         <p>
           We appreciate you taking the time to give a rating. If you ever need
           more support, don't hesitate to get in touch!
         </p>
-      </section>
+      </div>
 `,
     );
   });
